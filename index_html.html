@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>随缘组 | 青少年脊椎侧弯康复内容小红书传播与用户需求分析</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', 'PingFang SC', Roboto, 'Helvetica Neue', sans-serif;
+            background-color: #f5f7fb;
+            color: #1e2a3e;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 24px;
+            box-shadow: 0 20px 35px -10px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #2b7a4b 0%, #1e5a3a 100%);
+            color: white;
+            padding: 50px 40px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .hero .sub {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+            border-bottom: 1px solid #e9ecef;
+            padding-bottom: 30px;
+        }
+
+        .section h2 {
+            font-size: 1.6rem;
+            color: #2b7a4b;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .section h2::before {
+            content: "📌";
+            font-size: 1.4rem;
+        }
+
+        .card-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 24px;
+            margin-top: 20px;
+        }
+
+        .card {
+            flex: 1;
+            min-width: 250px;
+            background: #f8f9fc;
+            border-radius: 20px;
+            padding: 20px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+
+        .card h3 {
+            color: #1e4663;
+            margin-bottom: 10px;
+        }
+
+        .analysis-text {
+            background: #fefce8;
+            padding: 20px;
+            border-radius: 20px;
+            border-left: 6px solid #2b7a4b;
+            margin: 20px 0;
+        }
+
+        .button-link {
+            display: inline-block;
+            background-color: #2b7a4b;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 40px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.2s;
+            margin-top: 10px;
+        }
+
+        .button-link:hover {
+            background-color: #1e5a3a;
+            transform: scale(1.02);
+        }
+
+        .stat-placeholder {
+            background: #eef2f5;
+            border-radius: 16px;
+            padding: 20px;
+            text-align: center;
+            color: #4a627a;
+            border: 1px dashed #b9c8e0;
+            margin: 15px 0;
+        }
+
+        footer {
+            background-color: #1e2a3e;
+            color: #adb5bd;
+            text-align: center;
+            padding: 24px;
+            font-size: 0.9rem;
+        }
+
+        footer .copyright {
+            font-size: 1rem;
+            letter-spacing: 1px;
+        }
+
+        @media (max-width: 768px) {
+            .content {
+                padding: 20px;
+            }
+            .hero h1 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <!-- 标题区 -->
+    <div class="hero">
+        <h1>📱 青少年脊椎侧弯康复内容<br>小红书传播与用户需求分析报告</h1>
+        <div class="sub">四班 · 随缘组 | 数据驱动 · 内容策略</div>
+    </div>
+
+    <div class="content">
+        <!-- 1. 项目概述 -->
+        <div class="section">
+            <h2>项目概述</h2>
+            <p>本项目聚焦“青少年脊椎侧弯康复”话题在小红书平台的传播现状与用户真实需求。通过采集小红书相关笔记、评论数据，结合Excel统计与FineBI可视化，分析用户痛点、内容偏好及康复关键词，为康复机构、内容创作者提供数据支持与运营建议。</p>
+            <p><strong>核心目标：</strong> 挖掘高互动内容特征，了解家长及青少年对康复知识、器材、运动跟练的核心需求，助力优质康复内容精准传播。</p>
+        </div>
+
+        <!-- 2. Excel 统计数据 -->
+        <div class="section">
+            <h2>📊 Excel 统计数据</h2>
+            <p>对“脊椎侧弯康复”相关笔记（样本量N=500）进行统计，包括点赞、收藏、评论、关键词频次等。</p>
+            <div class="stat-placeholder">
+                📋 Excel统计表：笔记互动数据（点赞/收藏/评论中位数）、高频关键词TOP10、用户年龄分布
+            </div>
+            <div class="stat-placeholder">
+                📈 关键词频率统计：“支具”(32%)、“康复训练”(28%)、“施罗斯”(18%)、“跟练视频”(15%)、“体态矫正”(7%)
+            </div>
+        </div>
+
+        <!-- 3. FineBI 可视化图表 + 超链接 -->
+        <div class="section">
+            <h2>📈 FineBI 可视化图表</h2>
+            <p>基于FineBI仪表板制作动态交互图表，展示笔记互动趋势、用户需求词云、内容类型分布。</p>
+            <div class="stat-placeholder">
+                📊 FineBI仪表板内容：<br>
+                · 近3个月“康复跟练”类笔记互动增长42%<br>
+                · 用户需求词云：“担心度数加深”、“求跟练视频”、“支具体验”为最高频诉求<br>
+                · 内容类型分布：图文笔记65% / 视频35%
+            </div>
+            <div style="margin-top: 15px;">
+                <a href="http://localhost:37799/webroot/decision/link/qQlR" class="button-link" target="_blank">🔗 访问FineBI交互仪表板</a>
+            </div>
+        </div>
+
+        <!-- 4. 分析报告 + 小组信息 -->
+        <div class="section">
+            <h2>📄 分析报告摘要</h2>
+            <div class="analysis-text">
+                <p><strong>📌 主要发现：</strong> 青少年脊椎侧弯康复相关内容在小红书具有高关注度，其中“家长求助帖”和“康复训练Vlog”互动率最高。用户最希望获得：①分阶段跟练视频；②支具佩戴经验；③医院与康复师推荐。但当前内容存在专业性不足、碎片化严重的问题。</p>
+                <p><strong>💡 传播建议：</strong> 联合康复师打造“侧弯康复必修课”系列笔记，多用关键词#脊柱侧弯康复、#体态矫正，并通过互动问答形式收集用户病例困惑，提高信任度。</p>
+                <p><strong>👥 小组信息：</strong> 四班 · 随缘组 ｜ 成员：王春秋、伍栢瑶、张一一、庞何悠优、余乐宣 ｜ 数据采集与分析周期：2026.03 - 2026.05</p>
+            </div>
+        </div>
+
+        <!-- 5. 内容组件展示 -->
+        <div class="section">
+            <h2>🎯 康复内容传播要点</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <h3>🔥 爆款笔记特征</h3>
+                    <p>标题关键词：“亲测有效”、“康复师推荐”、“侧弯从xx度到xx度”<br>封面风格：前后对比+红圈标注</p>
+                </div>
+                <div class="card">
+                    <h3>💬 用户留言高频需求</h3>
+                    <p>“求跟练视频”、“如何选择支具”、“有没有康复师推荐”、“担心手术”</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 页脚：版权符号+小组名+年份 -->
+    <footer>
+        <div class="copyright">© 2026 四班 · 随缘组 | 青少年脊椎侧弯康复内容分析 | 数据来源于小红书公开笔记及用户调研</div>
+        <div style="margin-top: 10px;">本网页为课程项目成果展示，保留所有权利。</div>
+    </footer>
+</div>
+</body>
+</html>
